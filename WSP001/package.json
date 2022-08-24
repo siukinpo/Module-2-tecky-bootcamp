@@ -1,0 +1,21 @@
+{
+  "name": "wsp001",
+  "version": "1.0.0",
+  "description": "",
+  "main": "01-fetch.js",
+  "scripts": {
+    "start": "ts-node 01-data-demo.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^18.7.12",
+    "node-fetch": "^3.2.10",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.7.4"
+  },
+  "devDependencies": {
+    "jest": "^28.1.3"
+  }
+}
