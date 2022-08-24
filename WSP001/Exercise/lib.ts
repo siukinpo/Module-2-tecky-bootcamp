@@ -4,7 +4,7 @@ export function someFunction() {
   console.log("Foobar");
 }
 
-export const lib = {
+export let lib = {
   someObject,
   someFunction,
 };

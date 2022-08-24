@@ -28,13 +28,13 @@ type Teacher = {
   students: Array<Student>;
 };
 
-type Student = {
+export type Student = {
   name: string;
   age: number;
   exercises?: Exercise[];
 };
 
-type Exercise = {
+export type Exercise = {
   score: number;
   date: Date;
 };

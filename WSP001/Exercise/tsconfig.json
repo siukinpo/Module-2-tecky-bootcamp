@@ -1,12 +1,10 @@
 {
   "compilerOptions": {
     "module": "commonjs",
-    "allowJs": true,
-    "outDir": "dist",
     "target": "es5",
     "lib": ["es6", "dom"],
     "sourceMap": true,
-
+    "allowJs": true,
     "jsx": "react",
     "esModuleInterop": true,
     "moduleResolution": "node",

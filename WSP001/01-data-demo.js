@@ -1,3 +1,5 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 var a = 123;
 a = "dennis";
 console.log(a);
@@ -12,7 +14,7 @@ function formatDate(date) {
 console.log(formatDate(new Date()));
 console.log(formatDate("2019-07-21"));
 console.log(new Date());
-console.log(new Date().toLocaleString());
+console.log(new Date().toLocaleString);
 var peter = {
     alias: "Peter",
     age: 50,
@@ -22,11 +24,12 @@ var peter = {
         {
             name: "Charlie",
             age: 25,
-            exercises: [{ score: 60, date: new Date("2019-01-05") }]
+            exercises: [{ score: 60, date: new Date("2019-01-05") }],
         },
-    ]
+    ],
 };
 function greetStudent(student) {
     console.log("hi", student.name);
 }
 greetStudent(peter.students[0]);
+//# sourceMappingURL=01-data-demo.js.map
