@@ -1,0 +1,13 @@
+import { lib } from "./lib";
+
+console.log(lib.someObject);
+console.log(lib.someFunction());
+
+///////////////////////////////////////////////////////////////////////////////////////
+
+import Cls from "./Cls";
+console.log(Cls());
+
+/////////////////////////////////////////////////
+import { func } from "./func";
+console.log(func());
