@@ -2,3 +2,7 @@
 # dist/
 # pnpm-lock.yam1
 # package-lock.json
+
+node_modules
+package-lock.json
+.vscode

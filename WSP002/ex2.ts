@@ -1,8 +1,8 @@
-interface Attack {
+export interface Attack {
   damage: number;
 }
 
-class BowAndArrow implements Attack {
+export class BowAndArrow implements Attack {
   //Bow and Arrow Attack here
   damage: number;
   constructor(damage: number) {
@@ -192,27 +192,39 @@ const Godfrey = new Barbarian("Godfrey");
 const monster = new Monster(1000);
 
 while (monster.gethp() > 0) {
-  if (Math.random() < 0.25) {
-    James.switchAttack();
-    console.log("James has switched his attack");
-    James.attack(monster);
+  if (monster.gethp() == 0) {
+    break;
   } else {
-    James.attack(monster);
+    if (Math.random() < 0.25) {
+      James.switchAttack();
+      console.log("James has switched his attack");
+      James.attack(monster);
+    } else {
+      James.attack(monster);
+    }
   }
 
-  if (Math.random() < 0.25) {
-    Eunice.switchAttack();
-    console.log("Eunice has switched her attack");
-    Eunice.attack(monster);
+  if (monster.gethp() == 0) {
+    break;
   } else {
-    Eunice.attack(monster);
+    if (Math.random() < 0.25) {
+      Eunice.switchAttack();
+      console.log("Eunice has switched her attack");
+      Eunice.attack(monster);
+    } else {
+      Eunice.attack(monster);
+    }
   }
 
-  if (Math.random() < 0.25) {
-    Godfrey.switchAttack();
-    console.log("Godfrey has switched his attack");
-    Godfrey.attack(monster);
+  if (monster.gethp() == 0) {
+    break;
   } else {
-    Godfrey.attack(monster);
+    if (Math.random() < 0.25) {
+      Godfrey.switchAttack();
+      console.log("Godfrey has switched his attack");
+      Godfrey.attack(monster);
+    } else {
+      Godfrey.attack(monster);
+    }
   }
 }
