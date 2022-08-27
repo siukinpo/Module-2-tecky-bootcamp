@@ -1,10 +1,17 @@
-export const someObject: string = "Hello World";
+// export const someObject = "Hello World";
 
-export function someFunction() {
-  console.log("Foobar");
-}
+// export function someFunction() {
+//   return "Foobar";
+// }
+// export let lib = {
+//   someObject,
+//   someFunction,
+// };
 
 export let lib = {
-  someObject,
-  someFunction,
+  someObject: "Hello World",
+  someFunction: function () {
+    console.log("Foobar");
+    return "Foobar";
+  },
 };

@@ -1,5 +1,7 @@
+console.log("=============================1==========================");
+
 function findFactors(num: number): Array<number> {
-  let factors = [];
+  let factors: number[] = [];
   for (let factor = 2; factor <= num / 2; factor++) {
     if (num % factor === 0) {
       factors.push(factor);
@@ -10,7 +12,7 @@ function findFactors(num: number): Array<number> {
 
 //////////////////////////////////////////////////////////////////////////////////////
 
-function leapYear(year: number) {
+function leapYear(year: number): boolean {
   if (year % 400 === 0) {
     console.log("Leap Year");
     return true;
@@ -28,7 +30,7 @@ function leapYear(year: number) {
 
 /////////////////////////////////////////////////////////////////////////////////////
 
-function rnaTranscription(dna: string) {
+export function rnaTranscription(dna: string): string {
   let rna: string = "";
   for (let nucleotide of dna) {
     switch (nucleotide) {
@@ -62,7 +64,7 @@ function factorial(number: number): number {
 }
 
 //////////////////////////////////////////////////////////////////////////////////////////
-const peter: Peter = {
+const peter: Teacher = {
   name: "Peter",
   age: 50,
   students: [
@@ -76,7 +78,7 @@ const peter: Peter = {
   ],
 };
 
-type Peter = {
+type Teacher = {
   name: string;
   age: number;
   students: Array<
@@ -93,14 +95,28 @@ type Peter = {
 };
 ///////////////////////////////////////////////////////////////////////////////////////////
 
-const timeoutHandler = () => {
-  console.log("Timeout happens!");
-};
+console.log("=============================6==========================");
 
-const timeout: number = 1000;
+// const timeoutHandler: () => void = () => {
+//   console.log('Timeout happens!')
+// }
+
+// const timeoutHandler = (): void => {
+//   console.log('Timeout happens!')
+// }
+
+function timeoutHandler(): void {
+  console.log("Timeout happens!");
+}
+
+const timeout = 1000;
 
 setTimeout(timeoutHandler, timeout);
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////
 
+console.log("=============================7==========================");
+
 const someValue: number | null = Math.random() > 0.5 ? 12 : null;
+
+let value: 11 | 12 = 11 || 12;
