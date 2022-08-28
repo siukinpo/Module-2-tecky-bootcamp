@@ -9,14 +9,14 @@ export class CodingStudent extends Student {
     this.skills = skills;
   }
   code(hours: number) {
-    // console.log("hellow world");
+    // console.log("hello world");
     this.learn(hours, 1.5);
   }
 }
 
-let louis = new CodingStudent("louis", 30, ["typerscript", "javascript"]);
+let louis = new CodingStudent("louis", 30, ["typescript", "javacript"]);
 
-function main() {
+export function main() {
   louis.read(10);
   louis.code(5);
 

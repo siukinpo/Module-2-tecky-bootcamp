@@ -4,7 +4,7 @@
 //   exercises?: Exercise[];
 // };
 
-import { Student } from "./01-data-demo";
+import { Student } from "./01-data";
 
 // type Exercise = {
 //   score: number;

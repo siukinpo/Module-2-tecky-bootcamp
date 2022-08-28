@@ -1,3 +1,3 @@
-export interface HongKonger {
+export interface Hongkonger {
   scanLeaveHomeSafe: () => void;
 }
