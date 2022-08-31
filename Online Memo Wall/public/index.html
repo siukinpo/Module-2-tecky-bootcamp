@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Online Memo Wall</title>
+  </head>
+
+  <body>
+    <div id="memoWall">
+      <div id="manager">
+        <form action="/memoSubmit" method="POST" enctype="multipart/form-data">
+          <div>
+            <textarea
+              class="memoContent"
+              name="thought"
+              placeholder="Please type your thought"
+            ></textarea>
+          </div>
+          <br />
+          <div>
+            <input type="file" name="file" />
+          </div>
+          <div class="submit">
+            <button class="submitButton">提交</button>
+          </div>
+        </form>
+        <form action="memoManager" method="POST">
+          <div id="managerWord">連儂管理員專用</div>
+          <label for="username">username</label>
+          <input type="text" name="username" />
+          <br />
+          <label for="password">password</label>
+          <input type="text" name="password" />
+          <div class="submit">
+            <button class="submitButton">提交</button>
+          </div>
+        </form>
+      </div>
+      <div class="memoContent"></div>
+      <div class="memoContent"></div>
+    </div>
+  </body>
+</html>
