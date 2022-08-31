@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#memoWall {
+  display: flex;
+  padding: 10px;
+  background-color: #d1a689;
+  height: 100vh;
+}
+
+#memoWall > #manager {
+  height: 500px;
+  background-color: #811314;
+  padding: 10px;
+}
+.memoContent {
+  margin: 0 10px;
+  height: 200px;
+  width: 200px;
+  background: #f4de78;
+  box-shadow: 5px 5px 10px 5px black;
+}
+
+.submit {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.submit > button {
+  font-size: 20px;
+}
+#managerWord {
+  margin-top: 5px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: #ff0005;
+}
