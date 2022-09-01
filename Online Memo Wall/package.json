@@ -1,10 +1,9 @@
 {
   "name": "lecture",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npx ts-node-dev app.ts"
+    "start": "ts-node-dev app.ts"
   },
   "keywords": [],
   "author": "",
@@ -25,5 +24,6 @@
     "formidable": "^2.0.1",
     "jsonfile": "^6.1.0",
     "listening-on": "^2.0.9"
-  }
+  },
+  "description": ""
 }

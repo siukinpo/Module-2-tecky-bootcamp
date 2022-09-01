@@ -18,7 +18,7 @@ app.use(express.static("public"));
 app.post("/memoSubmit", async (req, res) => {
   //await jsonfile.writeFile()
   const memoMsg = req.body;
-  //   console.log(memoMsg);
+  console.log(memoMsg);
 
   let memoArray = await jsonfile.readFile("memo.json");
   //   console.log(memoArray);
