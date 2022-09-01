@@ -1,9 +1,10 @@
-import express from "express";
+import express, { urlencoded } from "express";
 import { print } from "listening-on";
 
 let app = express();
 
 app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
 type Student = {
   name: string;

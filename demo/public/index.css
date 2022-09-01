@@ -1,0 +1,10 @@
+#student-container {
+  background-color: red;
+  width: 10rem;
+  height: 10rem;
+}
+
+.student {
+  background-color: yellow;
+  margin: 1rem;
+}
