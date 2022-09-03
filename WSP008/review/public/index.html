@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Registration</title>
+
+</head>
+
+<body>
+    <div>
+        <div id="signupWord">Sign up</div>
+        <form action="/signup" method="POST" id="signup">
+            <label for="username">Username</label>
+            <input type="text" name="username">
+            <br>
+            <br>
+            <label for="password">&nbspPassword</label>
+            <input type="password" name="password">
+            <br>
+            <br>
+            <label for="re_password">Re-password</label>
+            <input type="password" name="re_password">
+            <br>
+            <br>
+            <label for="email">Email</label>
+            <input type="email" name="email">
+            <br>
+            <br>
+            <input type="submit" value="Register" class="signup">
+            <!-- value係決定粒制入面啲字 -->
+        </form>
+        <br>
+        <div id="loginWord">Log in</div>
+        <form action="/login" method="POST" id="login">
+            <label for="username">Username</label>
+            <input type="text" name="username">
+            <br>
+            <br>
+            <label for="password">&nbspPassword</label>
+            <input type="password" name="password">
+            <br>
+            <br>
+            <input type="submit" value="Log in" class="login">
+            <!-- value係決定粒制入面啲字 -->
+        </form>
+
+
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>
