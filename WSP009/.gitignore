@@ -3,4 +3,3 @@ package-lock.json
 .vscode
 uploads
 user.json
-.env
