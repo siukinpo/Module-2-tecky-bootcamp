@@ -1,0 +1,22 @@
+{
+  "name": "wsp009",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "ts-node mainex2.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^18.7.14",
+    "@types/pg": "^8.6.5",
+    "dotenv": "^16.0.2",
+    "pg": "^8.8.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.8.2",
+    "xlsx": "^0.18.5"
+  }
+}

@@ -18,6 +18,8 @@ app.use((req, res, next) => {
 
 app.post("/students", (req, res) => {
   let student = req.body;
+  console.log(student);
+
   studentList.push(student);
   res.json({ studentNo: studentList.length });
 });
