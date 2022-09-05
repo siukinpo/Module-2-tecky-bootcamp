@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start1": "npx ts-node mainex1.ts",
-    "start2": "npx ts-node mainex2.ts"
+    "start": "npx ts-node-dev app.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
