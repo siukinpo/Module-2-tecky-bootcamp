@@ -32,24 +32,26 @@ const client = new pg.Client({
 export async function main() {
   await client.connect(); // "dial-in" to the postgres server
   const user = {
-    username: "gordon",
+    username: "gordon, '123'); select * from users;",
     password: "tecky",
   };
-  await client.query(`INSERT INTO "user" (username,password) values ($1,$2)`, [
-    user.username,
-    user.password,
-  ]);
-
-  const result = await client.query(
-    `SELECT * from "user" where username = $1`,
-    ["gordon"]
+  await client.query(
+    `INSERT INTO users (username,password) values (${user.username},$2)`
+    // , [
+    //   user.username,
+    //   user.password,
+    // ]
   );
+
+  const result = await client.query(`SELECT * from users where username = $1`, [
+    "gordon",
+  ]);
   console.log(result.rows[0].username, result.rows[0].password); // gordon
   await client.end(); // close connection with the database
 }
-// main();
+main();
 
-console.log("reading excel data...");
-const filename = "WSP009-exercise.xlsx";
-var workbook = XLSX.readFile(filename);
-console.log("workbook: ", workbook);
+// console.log("reading excel data...");
+// const filename = "WSP009-exercise.xlsx";
+// var workbook = XLSX.readFile(filename);
+// console.log("workbook: ", workbook);
