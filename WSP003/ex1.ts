@@ -24,9 +24,11 @@ function listAllJs(_path: string) {
     });
 }
 
-listAllJs("/Users/siukinpo/Documents/Module-2-tecky-bootcamp/WSP003");
+// listAllJs("/Users/siukinpo/Documents/Module-2-tecky-bootcamp/WSP003");
 
-console.log("===============================================================");
+console.log(
+  "======================================================================================================="
+);
 
 // async function listAllJs(_path: string) {
 //   let filenames = await fs.promises.readdir(_path);
@@ -37,4 +39,5 @@ console.log("===============================================================");
 //     console.log(path.join(_path, filename));
 //   }
 // }
-// listAllJs("/Users/siukinpo/Documents/Module-2-tecky-bootcamp/WSP003");
+// listAllJs("/Users/siukinpo/Documents/Module-2-tecky-bootcamp/WSP003");                // macbook
+listAllJs("C:\\Users\\Siu Kin Po\\Desktop\\Module-2-tecky-bootcamp\\WSP003"); //windows
