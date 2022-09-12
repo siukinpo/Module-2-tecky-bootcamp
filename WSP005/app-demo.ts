@@ -28,6 +28,7 @@ app.use((req, res, next) => {
   counter++;
   req.session.counter = counter;
   req.session.save();
+  //**********************人手save */
   next();
 });
 
